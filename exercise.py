@@ -11,6 +11,7 @@ def corresponding_parenthesis(text: str):
 
 
 result = corresponding_parenthesis(")))(((((")
+print(result)
 
 
 def remove_more_than_two_repetitions(text):
@@ -21,7 +22,6 @@ def remove_more_than_two_repetitions(text):
     count = 1
 
     for i in range(1, len(text)):
-        print(text[i])
         if text[i] == text[i - 1]:
             count += 1
             if count <= 2:
@@ -33,7 +33,6 @@ def remove_more_than_two_repetitions(text):
     return "".join(result)
 
 
-# Exemplo de uso:
-input_str = "Ollloco meuuuu, taaa peegaando fogoo biiiiichooo"
-output_str = remove_more_than_two_repetitions(input_str)
-print(output_str)
+text = "Ollloco meuuuu, taaa peegaando fogoo biiiiichooo"
+result1 = remove_more_than_two_repetitions(text)
+print(result1)
